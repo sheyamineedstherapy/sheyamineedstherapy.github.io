@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>InfoTech</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            font-family: Georgia, serif;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: white;
+        }
+
+        .navbar img {
+            height: 80px;
+        }
+
+        .navbar a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: black;
+            font-size: 22px;
+        }
+
+        /* HERO */
+        .hero {
+            height: 600px;
+            background-image: url('background.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 60px;
+            text-align: right;
+        }
+
+        .hero h1 {
+            font-size: 80px;
+            margin: 0;
+            color: black;
+            -webkit-text-stroke: 1px white;
+        }
+
+        .hero p {
+            font-size: 40px;
+            margin: 10px 0 30px;
+            color: black;
+            -webkit-text-stroke: 1px white;
+            font-family: Arial;
+        }
+
+        /* GET STARTED BUTTON */
+        .btn {
+            display: inline-block;
+            padding: 13px 30px;
+            background: #b45563;
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background: #9e4452;
+            transform: translateY(-3px);
+        }
+        
+        /* ICT DEFINITION */
+        .ict-section {
+          background: #f8f1f3;   
+          padding: 100px;
+          text-align: center;
+       }
+
+       .ict-section h1 {
+         font-size: 70px;
+         margin-bottom: 30px;
+         color: #b45563;
+        }
+
+       .ict-section p {
+         font-size: 22px;
+         line-height: 1.6;
+         color: #333;
+         max-width: 900px;
+         margin: auto;
+       }
+
+        /* SECTION BELOW HERO */
+        .topics-section {
+            background: #c9a0a6; 
+            padding: 80px 0;
+            border: 1px white;
+        }
+
+        .topics-container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .topic-link {
+            width: 30%;
+            text-decoration: none;
+            color: black;
+        }
+
+        .topic-box {
+            background: white;
+            padding: 40px 20px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .topic-box img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .topic-box h3 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+         .topic-box p {
+            font-size: 25px;
+            margin: 0;
+        }
+
+
+        /* DIFFERENT COLORED OUTLINES */
+        .software {
+            border: 3px solid #3b6fb6;
+        }
+
+        .hardware {
+            border: 3px solid #4f8f6a;
+        }
+
+        .tarpaulin {
+            border: 3px solid #8b3f4b;
+        }
+
+        /* HOVER EFFECTS MATCHING COLORS */
+        .software:hover {
+            box-shadow: 0 0 15px rgba(59,111,182,0.6);
+            transform: translateY(-8px);
+        }
+
+        .hardware:hover {
+            box-shadow: 0 0 15px rgba(79,143,106,0.6);
+            transform: translateY(-8px);
+        }
+
+        .tarpaulin:hover {
+            box-shadow: 0 0 15px rgba(139,63,75,0.6);
+            transform: translateY(-8px);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="InfoTech.html">
+        <img src="logo.png" alt="logo">
+    </a>
+
+    <div>
+        <a href="software.html">Software</a>
+        <a href="hardware.html">Hardware</a>
+        <a href="tarpaulin.html">Tarpaulin Making</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <div>
+        <h1>Take on various<br>insights on ICT</h1>
+        <p>From software to hardware,<br>know all about it.</p>
+        <a href="#information" class="btn">GET STARTED »</a>
+    </div>
+</div>
+
+<!-- ICT DEFINITION SECTION -->
+<div class="ict-section" id="information">
+    <h1 >What is ICT?</h1>
+    <p>
+        Information and Communication Technology (ICT) is the study, design, and use of systems that manage, store, 
+        and transmit information through computers, networks, and digital communication tools. It combines hardware, 
+        software, and human expertise to enable learning, business, and communication in the modern world.
+    </p>
+</div>
+
+<!-- SEPARATE SECTION FOR TOPICS -->
+<div class="topics-section">
+    <div class="topics-container">
+
+        <a href="software.html" class="topic-link">
+            <div class="topic-box software">
+                <img src="software.jpg" alt="Software">
+                <h3>Software</h3> <br>
+                <p>Understand the logic that powers our devices, from operating systems to mobile applications.</p> <br>
+                <p style="color:blue; font-weight:bold; text-decoration:underline;">Explore Software →</p>
+            </div>
+        </a>
+
+        <a href="hardware.html" class="topic-link">
+            <div class="topic-box hardware">
+                <img src="hardware.png" alt="Hardware">
+                <h3>Hardware</h3> <br>
+                <p>Dive into the physical components that make computing possible, from CPUs to peripherals.</p> <br>
+                <p style="color:green; font-weight:bold; text-decoration:underline;">Explore Hardware →</p>
+            </div>
+        </a>
+
+        <a href="tarpaulin.html" class="topic-link">
+            <div class="topic-box tarpaulin">
+                <img src="tarpaulin.png" alt="Tarpaulin Making">
+                <h3>Tarpaulin Making</h3> <br>
+                <p>Master the art of large-format digital design and printing for advertising and events.</p> <br>
+                <p style="color:purple; font-weight:bold; text-decoration:underline;">Explore Printing →</p>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+</body>
+</html> 
